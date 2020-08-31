@@ -44,3 +44,4 @@ getData
 countTotalNumberOfTime_WaitConnections
 readAndCalculateData
 rm netstat.txt
+echo "Data Saved in output.txt File"
