@@ -31,10 +31,10 @@ readAndCalculateData()
 	echo "Procto Recv-Q Send-Q Local Address                Foreign Address                   State                     ">>output.txt
 	while IFS=" " read a1 a2 a3 a4 a5 a6
 	do 
-		if [ "$a6" == "ESTABLISHED" ] || [ "$a6" == "TIME_WAIT" ] 
-		then
-		    echo "$a1    $a2    $a3       $a4       $a5           $a6">>output.txt
-		fi
+	  if [ "$a6" == "ESTABLISHED" ] || [ "$a6" == "TIME_WAIT" ] 
+	  then
+	      echo "$a1    $a2    $a3       $a4       $a5           $a6">>output.txt
+	  fi
 	done <"$file"
 }
 
